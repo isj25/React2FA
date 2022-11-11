@@ -1,0 +1,19 @@
+curl --location --request POST 'https://api.novu.co/v1/events/trigger' \
+                         --header 'Authorization: ApiKey 1e938140d4004d5d1a3553ec1b1cf3c1' \
+                         --header 'Content-Type: application/json' \
+                         --data-raw '{
+                            "name": "on-boarding-notification",
+                            "to": {
+                                "subscriberId": "636d1290d5ec781ad75d5055",
+                                "firstName": "ishwar",
+                                "lastName": "joshi"
+                            },
+                            "payload": {
+                                "$on_boarding_trigger": "true",
+                                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzZkMTI5MGQ1ZWM3ODFhZDc1ZDUwNTUiLCJmaXJzdE5hbWUiOiJpc2h3YXIiLCJsYXN0TmFtZSI6Impvc2hpIiwiZW1haWwiOiJpc2h3YXJqNTE1QGdtYWlsLmNvbSIsInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9hdmF0YXJzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91LzY4NzIzMjMxP3Y9NCIsIm9yZ2FuaXphdGlvbklkIjoiNjM2ZDEyOTI5ODIxYWE3YjI4OWZmY2U2Iiwicm9sZXMiOlsiYWRtaW4iXSwiZW52aXJvbm1lbnRJZCI6IjYzNmQxMjkyOTgyMWFhN2IyODlmZmNlYyIsImlhdCI6MTY2ODA5MjU2MiwiZXhwIjoxNjcwNjg0NTYyLCJpc3MiOiJub3Z1X2FwaSJ9.8Pi97PRkji-2oJgw1nBU3s7diIMDg1NBYrxCsROsUOs"
+                            }
+                        }'
+                    
+                  
+
+                  
